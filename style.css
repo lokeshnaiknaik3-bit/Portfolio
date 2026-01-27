@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f7f8fc, #eef1f6);
+  color: #111;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 100px 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #111;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* HERO TEXT */
+.hero-text h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.hero-text p {
+  color: #555;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* BUTTONS */
+.hero-text .btns a {
+  display: inline-block;
+  margin-top: 18px;
+  margin-right: 12px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: 1px solid #111;
+  color: #111;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero-text .btns a:hover {
+  background: #111;
+  color: white;
+}
+
+/* GLASS SECTIONS */
+.section {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section h2 {
+  margin-bottom: 12px;
+  color: #111;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.skill {
+  padding: 14px;
+  text-align: center;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.project {
+  padding: 18px;
+  border-radius: 15px;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+  margin-top: 40px;
+}

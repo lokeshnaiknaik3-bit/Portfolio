@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lokesh Naik | Premium Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Link CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="profile.jpg" class="profile-pic">
+
+  <div class="hero-text">
+    <h1>Lokesh Naik</h1>
+    <p>Python Full Stack Developer | Web Developer</p>
+
+    <div class="btns">
+      <a href="https://linkedin.com/in/lokesh-naik-82b668331">LinkedIn</a>
+      <a href="https://github.com/lokeshnaiknaik3-bit">GitHub</a>
+      <a href="lokesh resume.pdf.docx">Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Me</h2>
+  <p>
+   Enthusiastic and detail-oriented Full Stack Developer proficient in Java, Python, SQL, HTML, CSS, and JavaScript. Skilled in building responsive front-end interfaces and robust back-end logic. Adept at writing clean, maintainable code and integrating databases for dynamic applications. Strong problem-solving abilities with a passion for delivering innovative, user-centric solutions. Eager to contribute technical expertise and creativity to develop impactful, highperformance web applications. 
+  </p>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">Python</div>
+    <div class="skill">Django</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">GitHub</div>
+    <div class="skill">REST APIs</div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project">
+      <h3>Innovation Clubs and Ideas Management </h3>
+      <p>An online platform that enables students and members to submit, share, and manage innovative ideas across various clubs and communities, eliminating the need for manual paperwork.  
+</p>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Modern personal portfolio to showcase skills and projects.</p>
+    </div>
+
+    <div class="project">
+      <h3> Food Website </h3>
+      <p>A food ordering website built using HTML, CSS, and JavaScript, providing a responsive and interactive user interface. </p>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2>Contact</h2>
+  <p>📍 Anantapur, Andhra Pradesh</p>
+  <p>📞 
+  <a href="tel:+916301497752">
+    +91 6301497752
+  </a>
+  <p>📧 lokeshnaiknaik3@gmail.com</p>
+  <p>🔗 https://linkedin.com/in/lokesh-naik-82b668331</p>
+
+</div>
+
+<footer>
+© 2026 Lokesh Naik — Premium Portfolio
+</footer>
+
+<script>
+const sections = document.querySelectorAll(".section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const pos = section.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 80) {
+      section.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
