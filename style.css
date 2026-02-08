@@ -1,4 +1,4 @@
- {
+* {
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
 }
@@ -121,4 +121,22 @@ footer {
   color: #666;
   margin-top: 40px;
 }
+.explore-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: 1px solid #111;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  background: transparent;
+  transition: all 0.3s ease;
+}
 
+.explore-btn:hover {
+  background: #111;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
